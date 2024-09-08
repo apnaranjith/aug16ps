@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>click me</button>
+    <h1>forward</h1>
+    <button>true</button>
+    <button>press_me</button>
+    <button>knock_me</button>
+    <button>remove_item</button>
+    <button>CLEAR all</button>
+    <script>
+        var a=document.getElementsByTagName("button");
+        var s="ranjith"
+        a[0].addEventListener("click",function (){
+            window.location.assign("./resume.html");
+        })
+        var b=document.querySelector("h1");
+        b.addEventListener("click",function (){
+            window.history.forward()
+        })
+        a[1].addEventListener("click",function (){
+            if(confirm("Is it matched?")){
+                x=window.open("restaurant.html");
+            }
+            else{
+                x=window.location.assign("resume.html")
+            }
+
+
+        })
+        a[2].addEventListener("click",function (){
+            localStorage.setItem("first","ranjith");
+            localStorage.setItem("second","yadav");
+            localStorage.setItem("father","ranjith father");
+
+        })
+        a[3].addEventListener("click",function (){
+           console.log(localStorage.getItem("first"));
+        })
+        a[4].addEventListener("click",function (){
+            window.localStorage.removeItem("second")
+        })
+        a[5].addEventListener("click",function (){
+            window.localStorage.clear()
+        })
+        var ip1=prompt("enter username:");
+        var ip2=prompt("enter password:");
+        var obj={
+            x:ip1,
+            y:ip2
+
+        }
+        window.localStorage.setItem("user",JSON.stringify(obj));
+        console.log(localStorage.getItem(JSON.parse(user)));
+
+    </script>
+</body>
+</html>

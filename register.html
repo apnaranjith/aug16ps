@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var username=prompt("Enter your Username:");
+        var password=prompt("Enter Your Password:");
+        var Cpassword=prompt("Enter Your confirm Password:");
+        var Mobile=prompt("enter Your Mobile Number:");
+        if(password==Cpassword &&Mobile.length==10){
+            console.log("password and confirm password are same,Mobile number entered is valid");
+            window.localStorage.setItem("username",username);
+            window.localStorage.setItem("password",password);
+            window.localStorage.setItem("Confirm-password",Cpassword);
+            window.localStorage.setItem("Mobile-Number",Mobile);
+        }
+        else{
+            console.log("password and confirm password are not same");
+        }
+        
+    </script>
+</body>
+</html>

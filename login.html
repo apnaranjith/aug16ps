@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       
+       //console.log("username: "+window.localStorage.getItem("username"));
+       a=window.localStorage.getItem("username");
+       //console.log("password: "+window.localStorage.getItem("password"));
+       b=window.localStorage.getItem("password");
+ var uname=prompt("Enter your Username:");
+ var psword=prompt("Enter your password");
+ if(a==uname&&b==psword){
+    console.log("login successful!");
+
+ }
+ else{
+    console.log("login Unsuccessful")
+ }
+    </script>
+
+</body>
+</html>

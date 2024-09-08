@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="ranj()">ON</button>
+    <button onmouseover="chegu()">OFF</button>
+
+    <div></div>
+
+  
+    <script>
+        var Img_cre=document.createElement("img");
+    
+     function ranj(){
+        var divGet=document.getElementsByTagName("div");
+        divGet[0].style.height="300px";
+        divGet[0].style.width="300px";
+        divGet[0].style.border="2px solid black";
+        
+        Img_cre.setAttribute("src","11.jpg");
+        Img_cre.style.height="300px";
+       Img_cre.style.width="300px";
+
+        divGet[0].append(Img_cre);
+        }
+        function chegu(){
+            var divGet=document.getElementsByTagName("div");
+        divGet[0].style.height="300px";
+        divGet[0].style.width="300px";
+        divGet[0].style.border="2px solid black";
+    
+        Img_cre.setAttribute("src","office.png");
+        Img_cre.style.height="300px";
+       Img_cre.style.width="300px";
+
+        divGet[0].append(Img_cre);
+        }
+       
+       
+    
+    </script>
+</body>
+</html>

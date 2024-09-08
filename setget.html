@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #yadav{
+            color:red;
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <img src="./11.jpg">
+    <h1 id="ran">Ranjith is <span>super cool</span></h1>
+    <script>
+  var img=document.querySelector("img");
+
+  img.setAttribute("alt","random");
+  console.log(img.getAttribute("height"));
+  img.height="600";
+  img.setAttribute("height","300");
+  var h1_get=document.getElementById("ran");
+  h1_get.setAttribute("id","yadav");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="id1" src="./11.jpg" height="100" width="100" onmouseover="forimg1()"><br> 
+    <img id="id2" src="office.png" height="100" width="100" onmouseover="forimg2()"><br>
+    <img id="id3" src="project-image03 (1).jpg" height="100" width="100" onmouseover="forimg3()">
+    <div></div>
+
+    <script>
+        var divGet=document.querySelector("div");
+        divGet.style.display="inline-block";
+        divGet.style.height="400px";
+        divGet.style.width="300px";
+        divGet.style.border="2px solid black";
+        divGet.style.position="fixed";
+        divGet.style.top="100px";
+         function forimg1(){
+            var Img_cre1=document.getElementById("id1");
+            Img_cre1.style.height="200px";
+            Img_cre1.style.width="300px";
+
+            divGet.append(Img_cre1);
+           
+         }
+         function forimg2(){
+            var Img_cre1=document.getElementById("id2");
+            Img_cre1.style.height="200px";
+            Img_cre1.style.width="300px";
+
+            divGet.append(Img_cre1);
+           
+         }
+        
+
+    </script>
+</body>
+</html>
